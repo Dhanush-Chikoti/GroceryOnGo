@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>Groceries On Go Home Page</title>    
+ <style>
+
+input[type=text], select {
+    width: 12%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=password], select {
+    width: 12%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button[type=submit] {
+    width: 18%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+input[type=button]:hover {
+    background-color: #4CAF50;
+}
+
+
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+}
+
+body  {
+    background-image: url("file:///C:/Users/ratho/workspace/database2/304_lab7_bonus/bground.jpg");
+    background-repeat: no-repeat;
+    background-size: 2000px 1000px;
+}
+
+dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-.width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+.dropdown-content a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-content {display: block;}
+
+.dropdown:hover .dropbtn {background-color: #4CAF50;}
+
+</style>
+</head>
+<body>
+
+
+<form action="validation.jsp" method="post" >
+  <div class="imgcontainer">
+    <img src="file:///C:/Users/ratho/workspace/database2/304_lab7_bonus/gong.jpg" alt="Avatar" class="avatar">
+  </div>
+
+
+<br>
+<br>
+  <div class="container" align="center">
+  <font size= "6" color="green" face= "Courier"> <label for="uname"><b>Username &nbsp;</b></label>
+    <input size="" type="text" placeholder="Enter Username" name="uname"  required="required"></font> 
+	<br>
+	
+	
+	<font size= "6" color="green" face="Courier"> <label for="psw"><b>Password &nbsp; </b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required="required"></font>
+    
+    <br>
+	<br>
+    <button type="submit"> <font size= "6" color="white" face="Courier"><b>Login</b> </font></button>
+    <br>
+    <div class="dropdown">
+  		<button class="dropbtn" type="button"  > <font size= "6" color="Green" face="Courier"> <b>Sign Up</b> </font></button>
+  			<div class="dropdown-content" align="center">
+    			<a href="signupCustomer.html"> <font size= "5" color="green" face="Courier"> <b>Customer</b>&nbsp;  </font></a>
+    			<a href="signupFarmer.html"><font size= "5" color="green" face="Courier"><b>Farmer</b>  </font></a>
+    			<a href="signupDriver.html"><font size= "5" color="green" face="Courier"><b>Driver</b> </font></a>
+  			</div>
+	</div>
+    
+  </div>
+<br>
+  
+  
+</form>
+
+
+
+</body>
+</head>
+
+
